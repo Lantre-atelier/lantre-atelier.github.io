@@ -49,7 +49,7 @@ Design by Clémence Fontaine           `--------'
     
     h1 {
         font-size: 3em;
-        font-family: 'mazius';
+        font-family: sans-serif ;
         font-style: normal;
         font-weight: lighter;
         color: rgb(7, 34, 182);
@@ -65,7 +65,7 @@ Design by Clémence Fontaine           `--------'
         font-size: 1.5em;
         font-weight: lighter;
         line-height: 1.25em;
-        font-family: 'ortica';
+        font-family: sans-serif;
         font-style: normal;
         padding: 0.5em 0em 0.5em 0em;
         cursor: crosshair;
@@ -76,7 +76,7 @@ Design by Clémence Fontaine           `--------'
         bottom: 1em;
         right: 0em;
         line-height: 40px;
-        font-family: "ortica";
+        font-family: sans-serif;
         cursor: crosshair;
         font-size: 2em;
         color: rgb(7, 34, 182);
