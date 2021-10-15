@@ -1,0 +1,376 @@
+    /*                  .------.
+           /  ~ ~   \,------.      ______
+         ,'  ~ ~ ~  /  (@)   \   ,'      \
+       ,'          /`.    ~ ~ \ /         \
+     ,'           | ,'\  ~ ~ ~ X     \  \  \
+   ,'  ,'          V--<       (       \  \  \
+ ,'  ,'               (vv      \/\  \  \  |  |
+(__,'  ,'   /         (vv   ""    \  \  | |  |
+  (__,'    /   /       vv   """    \ |  / / /
+      \__,'   /  |     vv          / / / / /
+          \__/   / |  | \         / /,',','
+             \__/\_^  |  \       /,'',','\
+                    `-^.__>.____/  ' ,'   \
+                            // //---'      |
+          ===============(((((((=================
+                                     | \ \  \
+                                     / |  |  \
+                                    / /  / \  \
+                                    `.     |   \
+Design by Clémence Fontaine           `--------'
+*/
+    
+    @font-face {
+        font-family: "mazius";
+        src: url("./font/Mazius\ Display\ Extraitalic.otf");
+    }
+    
+    @font-face {
+        font-family: "ortica";
+        src: url("./font/Ortica-Light.otf");
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: white;
+        font-size: 10px;
+        -webkit-font-smoothing: antialiased;
+        cursor: crosshair;
+    }
+    
+    footer {
+        bottom: 0;
+    }
+    
+    h1 {
+        font-size: 3em;
+        font-family: 'mazius';
+        font-style: normal;
+        font-weight: lighter;
+        color: rgb(7, 34, 182);
+        text-align: left;
+        line-height: 0.8em;
+        padding: 0em 0em 0em 0em;
+        cursor: crosshair;
+    }
+    
+    h2 {
+        color: rgb(7, 34, 182);
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: lighter;
+        line-height: 1.25em;
+        font-family: 'ortica';
+        font-style: normal;
+        padding: 0.5em 0em 0.5em 0em;
+        cursor: crosshair;
+    }
+    
+    h3 {
+        color: rgb(7, 34, 182);
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 1em;
+        font-family: 'ortica';
+        font-style: normal;
+        font-weight: lighter;
+        padding: 0em 0em 1em 0em;
+        cursor: crosshair;
+    }
+    
+    h4 {
+        color: rgb(7, 34, 182);
+        text-align: left;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        font-family: 'ortica';
+        font-style: normal;
+        font-weight: lighter;
+        cursor: crosshair;
+    }
+    
+    h5 {
+        color: rgb(7, 34, 182);
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 1em;
+        font-family: 'ortica';
+        font-style: normal;
+        font-weight: lighter;
+        padding: 0em 0em 1em 0em;
+        cursor: crosshair;
+    }
+    
+    h3:hover {
+        font-weight: bolder;
+    }
+    
+    h5:hover {
+        font-weight: bolder;
+    }
+    
+    .intro {
+        display: none;
+    }
+    
+    .crédits {
+        display: none;
+    }
+    
+    .a {
+        text-decoration: none;
+        color: rgb(7, 34, 182);
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100vw;
+    }
+    
+    a:link {
+        color: rgb(7, 34, 182);
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: rgb(7, 34, 182);
+        text-decoration: none;
+    }
+    
+    p {
+        text-indent: 15%;
+    }
+    
+    .titre {
+        font-size: 20em;
+        font-family: 'mazius';
+        font-style: normal;
+        color: rgb(7, 34, 182);
+        cursor: crosshair;
+        text-align: center;
+        padding: 0.6em 0em 0em 0em;
+    }
+    
+    .soustitre {
+        font-size: 4em;
+        font-family: 'ortica';
+        font-style: normal;
+        color: rgb(7, 34, 182);
+        cursor: crosshair;
+        text-align: center;
+        padding: 0.1em 0em 0em 0em;
+    }
+    
+    .logo {
+        position: fixed;
+        bottom: 1em;
+        right: 0em;
+        line-height: 40px;
+        font-family: "ortica";
+        cursor: crosshair;
+        font-size: 2em;
+        color: rgb(7, 34, 182);
+        float: right;
+        width: 41vh;
+        margin-left: 10px;
+        padding: 2em 1em 1em 0em;
+    }
+    
+    div#colonne1 {
+        font-family: "ortica";
+        cursor: crosshair;
+        font-size: 2em;
+        color: rgb(7, 34, 182);
+        float: left;
+        width: 55vh;
+        padding: 2em 0em 1em 1em;
+    }
+    
+    div#colonne2 {
+        font-family: "ortica";
+        font-size: 2em;
+        color: rgb(7, 34, 182);
+        float: right;
+        width: 41vh;
+        height: 100vh;
+        margin-left: 10px;
+        flex: auto;
+        cursor: crosshair;
+        overflow-y: scroll;
+        text-align: left;
+        padding: 2em 1em 1em 0em;
+    }
+    
+    div#centre {
+        width: auto;
+        height: 100vh;
+        overflow: hidden;
+        text-align: center;
+        flex: auto;
+        cursor: crosshair;
+        overflow-y: scroll;
+        padding: 0em 0em 0em 0em;
+    }
+    
+    #whitespace {
+        min-width: 25vw;
+    }
+    
+    .infobulle1 {
+        /* les .infobulle deviennent référents */
+        cursor: crosshair;
+    }
+    
+    .infobulle1:hover::after,
+    .infobulle1:focus::after {
+        position: absolute;
+        background-color: rgb(7, 34, 182);
+        font-size: 0.8em;
+        width: 25vw;
+        height: auto;
+        color: white;
+        content: attr(aria-label);
+        top: 30%;
+        left: 0%;
+        z-index: 1;
+        text-align: left;
+        /* pour s'afficher au dessus des éléments en position relative */
+        white-space: pre-line;
+        /* on interdit le retour à la ligne */
+        margin-left: 1em;
+        padding: 0.5em 1em;
+        border: 1px double rgb(7, 34, 182);
+    }
+    
+    .photo {
+        display: inline-flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-right: 0.3em;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    
+    .photo:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+    
+    .photo img {
+        justify-content: space-between;
+        width: auto;
+        height: 38vh;
+        max-height: 100%;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        h1 {
+            font-size: 4.2em;
+        }
+        h3 {
+            line-height: 1em;
+            padding: 0em 0em 1em 0em;
+        }
+        h5 {
+            display: none;
+        }
+        #a,
+        #b {
+            flex-direction: column;
+            padding: 0;
+            border: 0;
+        }
+        div#colonne1 {
+            color: black;
+            width: 100%;
+            padding: 2em 0em 1em 2em;
+        }
+        div#colonne2 {
+            float: left;
+            width: 100%;
+            height: auto;
+            flex: auto;
+            text-align: left;
+            padding: 1em 0em 0em 2em;
+        }
+        div#centre {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            flex: auto;
+            padding: 1em 0em 0em 2em;
+        }
+        .intro {
+            display: block;
+            font-size: 0.9em;
+            height: auto;
+            color: rgb(7, 34, 182);
+        }
+        .crédits {
+            display: block;
+            width: 100%;
+            column-count: 1;
+            font-size: 1em;
+            color: white;
+            padding: 1em 2em 1em 2em;
+            background-color: rgb(7, 33, 182);
+        }
+        .photo {
+            justify-content: space-between;
+        }
+        .photo img {
+            margin: 0 0 1em 0;
+            width: 30vw;
+            height: auto;
+        }
+        .infobulle:hover::after,
+        .infobulle:focus::after {
+            display: none;
+        }
+        .infobulle1:hover::after,
+        .infobulle1:focus::after {
+            display: none;
+        }
+        .logo {
+            position: relative;
+            padding: 2em 0em 1em 2em;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .titre {
+            font-size: 12em;
+        }
+        .soustitre {
+            font-size: 5em;
+        }
+        .adresse {
+            font-size: 3em;
+        }
+        h2 {
+            padding-bottom: 0.5em;
+        }
+        .photo img {
+            margin: 0 0 0.5em 0;
+            width: 45vw;
+            height: auto;
+        }
+        div#colonne1 {
+            width: 98%;
+            padding: 2em 0em 1em 1em;
+        }
+        div#colonne2 {
+            width: auto;
+            height: auto;
+            padding: 0em 0em 0.5em 1em;
+        }
+        div#centre {
+            width: 98%;
+            height: auto;
+            padding: 0em 0em 0em 0.5em;
+        }
+    }
