@@ -20,15 +20,6 @@
 Design by Clémence Fontaine           `--------'
 */
     
-    @font-face {
-        font-family: "mazius";
-        src: url("./font/Mazius\ Display\ Extraitalic.otf");
-    }
-    
-    @font-face {
-        font-family: "ortica";
-        src: url("./font/Ortica-Light.otf");
-    }
     
     * {
         margin: 0;
@@ -48,7 +39,7 @@ Design by Clémence Fontaine           `--------'
     }
     
     h1 {
-        font-size: 3em;
+        font-size: 4em;
         font-family: sans-serif ;
         font-style: normal;
         font-weight: lighter;
@@ -62,7 +53,7 @@ Design by Clémence Fontaine           `--------'
     h2 {
         color: rgb(7, 34, 182);
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2.5em;
         font-weight: lighter;
         line-height: 1.25em;
         font-family: sans-serif;
