@@ -17,13 +17,13 @@
         font-size: 10px;
         -webkit-font-smoothing: antialiased;
         cursor: crosshair;
-        font-family: Overpass ;
+        font-family: 'overpassbold' ;
     }
     
     
     h1 {
         font-size: 4em;
-        font-family: sans-serif ;
+        font-family: 'overpassbold' ;
         font-style: normal;
         color: blue;
         text-align: center;
@@ -34,13 +34,13 @@
         color: blue;
         text-align: center;
         font-size: 2.5em;
-        font-family: sans-serif;
+        font-family: 'overpassbold' ;
         font-style: normal;
          vertical-align : center ;
     }
     
     .logo {
-        font-family: sans-serif;
+        font-family: 'overpassbold' ;
         font-size: 1em;
         color: blue;
         vertical-align : center ;
